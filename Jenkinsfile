@@ -32,12 +32,6 @@ pipeline {
             }
         }
 
-        stage('Concat \' Workspace\'') {
-            steps {
-                sh 'echo \' Workspace\' >> multiple.txt'
-            }
-        }
-
         stage('show multiple.txt content') {
             steps {
                 sh 'cat multiple.txt'
